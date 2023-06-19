@@ -1,0 +1,34 @@
+<header class="color-header">
+    <button class="material-icons btn color-btn-home" [routerLink] = "['/home']">home</button>
+</header>
+<div class="row vh-100 d-flex flex-column justify-content-center align-items-center">
+    <div class="col-8 col-md-6 col-lg-4 d-flex flex-column justify-content-center edit-background">
+        <div class="d-flex justify-content-center mb-2 mt-2">
+            <h2>Editar contacto</h2>
+        </div>
+        <div class="d-flex flex-column align-items-center">
+            <div>
+                <input type="text" placeholder="{{apiResponse.name}}" [(ngModel)] = "editableName" class="mb-2 form-control">
+            </div>
+            <div>
+                <input type="text" placeholder="{{apiResponse.lastName}}" [(ngModel)] = "editableLastName" class="mb-2 form-control">
+            </div>
+            <div>
+                <input type="text" placeholder="{{apiResponse.email}}" [(ngModel)] = "editableEmail" class="mb-2 form-control">
+            </div>
+            <div>
+                <select [(ngModel)] = "editableGender" class="mb-2 form-control">
+                    <option value="Masculino" [selected]="apiResponse.gender == 'Masculino'">Masculino</option>
+                    <option value="Femenino" [selected] = "apiResponse.gender == 'Femenino'">Femenino</option>
+                    <option value="Otro" [selected] = "apiResponse.gender == 'Otro'">Otro</option>
+                </select>
+            </div>
+            <div>
+                <input type="text" placeholder="{{apiResponse.phoneNumber}}" [(ngModel)] = "editablePhoneNumber" class="mb-2 form-control">
+            </div>
+            <div>
+                <button class="btn mb-2 color-btn" (click) = "editContact()">Editar</button>
+            </div>
+        </div>
+    </div>
+</div>

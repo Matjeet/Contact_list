@@ -1,0 +1,47 @@
+.show-background{
+    background-color: #9d8bb6;
+    border-radius: 10px;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    transition: box-shadow 0.3s ease;
+}
+
+.show-background:hover{
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.color-btn{
+    background-color: #3a445d;
+    color: #fff;
+}
+
+button:hover{
+    background-color: #66708a;
+}
+
+.title-background{
+    background-color: #523b74;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.color-btn-edit{
+    background-color: #6f9ceb;
+}
+
+.color-btn-edit:hover{
+    background-color: #9fbbec;
+}
+
+.color-btn-delete{
+    background-color: #918ef4;
+}
+
+.color-btn-delete:hover{
+    background-color: #b9b7f0;
+}
+
+.contact-name{
+    background-color: #52288b;
+    color: #fff;
+    border-radius: 5px;
+}

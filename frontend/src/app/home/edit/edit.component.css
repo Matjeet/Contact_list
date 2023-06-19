@@ -1,0 +1,31 @@
+.edit-background{
+    background-color: #5e5768;
+    border-radius: 10px;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    transition: box-shadow 0.3s ease;
+}
+
+.edit-background:hover{
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+h2{
+    color: #fff;
+}
+
+.color-btn{
+    background-color: #3a445d;
+    color: #fff;
+}
+
+.color-btn:hover{
+    background-color: #66708a;
+}
+
+.color-header{
+    background-color: #6f4f9c;
+}
+
+.color-btn-home{
+    color: #fff;
+}

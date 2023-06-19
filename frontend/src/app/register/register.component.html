@@ -1,0 +1,37 @@
+<header class="color-header">
+    <button class="material-icons btn color-btn-back" [routerLink] = "['/']">arrow_back</button>
+</header>
+<div class="row vh-100 d-flex align-items-center justify-content-center">
+    <div class="row col-sm-6 col-lg-4 d-flex justify-content-center register-background">
+        <div class="col-12 vh-50 d-flex justify-content-center">
+            <h1>Registrar</h1>
+        </div>
+        <div class="col-8 d-flex flex-column justify-content-center">
+            <div class="col-12">
+                <input type="text" placeholder="Nombre" class="form-control mb-2" [(ngModel)] = "name">
+            </div>
+            <div class="col-12">
+                <input type="text" placeholder="Apellidos" class="form-control mb-2" [(ngModel)] = "lastName">
+            </div>
+            <div class="col-12">
+                <input type="email" placeholder="Correo" class="form-control mb-2" [(ngModel)] = "email">
+            </div>
+            <div class="col-12">
+                <select name="genero" id="" class="form-control mb-2" [(ngModel)] = "gender">
+                    <option value="Masculino" selected>Masculino</option>
+                    <option value="Femenino">Femenino</option>
+                    <option value="Otro">Otro</option>
+                </select>
+            </div>
+            <div class="col-12">
+                <input type="password" placeholder="Contraseña" class="form-control mb-2" [(ngModel)] = "password">
+            </div>
+            <div class="col-12">
+                <input type="password" placeholder="Confirmar contraseña" class="form-control mb-2" [(ngModel)] = "confirmPassword">
+            </div>
+            <div class="col-12 d-flex justify-content-center">
+                <button class="btn mb-2 color-btn" (click) = "registerUser()">Registrar</button>
+            </div>
+        </div>
+    </div>
+</div>

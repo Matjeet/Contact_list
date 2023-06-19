@@ -1,0 +1,14 @@
+<header class="color-header">
+    <button class="material-icons btn color-btn-home" [routerLink] = "['/home']">home</button>
+</header>
+<div class="row vh-100 d-flex align-items-center justify-content-center">
+    <div class="col-8 col-sm-8 col-md-6 d-flex flex-column align-items-center delete-background">
+        <div class="text-center mt-1">
+            <h3>¿Está seguro que quieres eliminar a <br><b>{{nameContact}} {{lastNameContact}}</b> <br>de tus contactos?</h3>
+        </div>
+        <div>
+            <button class="btn color-btn-si m-2" (click) = "deleteContact()">Sí</button>
+            <button class="btn color-btn-no" [routerLink] = "['/home']">No</button>
+        </div>
+    </div>
+</div>

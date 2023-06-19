@@ -1,0 +1,19 @@
+<div class="row d-flex flex-column align-items-center justify-content-center">
+    <div class="col-10 col-md-6 d-flex justify-content-center title-background mb-2">
+        <h2>Lista de contactos</h2>
+    </div>
+    <div *ngFor = "let contact of contactsList" class=" col-6 col-md-4 col-lg-3 mb-4 d-flex flex-column align-items-center show-background p-0">
+        <div class="col-12 contact-name d-flex justify-content-center mb-2 text-center">
+            <h5>{{contact.name}} {{contact.lastName}}</h5>
+        </div>
+        <div>
+            <p><b>Correo: </b>{{contact.email}}</p>
+            <p><b>Número de teléfono: </b>{{contact.phoneNumber}}</p>
+            <p><b>Género: </b>{{contact.gender}} </p>
+        </div>
+        <div>
+            <button class="btn m-2 color-btn-edit" [routerLink] = "['/edit']" [queryParams] = "{id: contact._id}">Editar</button>
+            <button class="btn color-btn-delete" [routerLink] = "['/delete']" [queryParams] = "{name: contact.name, lastName: contact.lastName, id: contact._id}">Eliminar</button>
+        </div>
+    </div>
+</div>

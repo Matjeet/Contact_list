@@ -1,0 +1,17 @@
+.create-background{
+    background-color: #5e5768;
+    border-radius: 10px;
+}
+
+.color-btn{
+    background-color: #3a445d;
+    color: #fff;
+}
+
+button:hover{
+    background-color: #66708a;
+}
+
+h2{
+    color: #fff;
+}

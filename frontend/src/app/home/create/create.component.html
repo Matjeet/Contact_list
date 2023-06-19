@@ -1,0 +1,31 @@
+<div class="row flex-column align-items-center mb-2">
+    <div class="col-8 col-md-4 d-flex flex-column align-items-center create-background">
+        <div class="d-flex align-items-center mt-1">
+            <h2>Crear contacto</h2>
+        </div>
+        <div class="flex-column d-flex align-items-center">
+            <div>
+                <input type="text" placeholder="Nombre" class="form-control mb-2" [(ngModel)] = "name">
+            </div>
+            <div>
+                <input type="text" placeholder="Apellidos" class="form-control mb-2" [(ngModel)] = "lastName">
+            </div>
+            <div>
+                <input type="text" placeholder="Correo" class="form-control mb-2" [(ngModel)] = "email">
+            </div>
+            <div>
+                <input type="text" placeholder="Número de teléfono" class="form-control mb-2" [(ngModel)] = phoneNumber>
+            </div>
+            <div>
+                <select name="genero" id="" class="form-control mb-2" [(ngModel)] = "gender">
+                    <option value="Masculino" selected>Masculino</option>
+                    <option value="Femenino">Femenino</option>
+                    <option value="Otro">Otro</option>
+                </select>
+            </div>
+            <div>
+                <button class="btn mb-2 color-btn" (click) = "createContact()">Crear</button>
+            </div>
+        </div>
+    </div>
+</div>

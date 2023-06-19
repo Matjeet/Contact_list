@@ -1,0 +1,38 @@
+.delete-background{
+    background-color: #5e5768;
+    border-radius: 10px;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    transition: box-shadow 0.3s ease;
+}
+
+.delete-background:hover{
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+h3{
+    color: #fff;
+}
+
+.color-btn-si{
+    background-color: #8390fa;
+}
+
+.color-btn-si:hover{
+    background-color: #a9b1e7;
+}
+
+.color-btn-no{
+    background-color: #a682ff;
+}
+
+.color-btn-no:hover{
+    background-color: #beaceb;
+}
+
+.color-header{
+    background-color: #6f4f9c;
+}
+
+.color-btn-home{
+    color: #fff;
+}

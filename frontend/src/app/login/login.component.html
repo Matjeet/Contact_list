@@ -1,0 +1,21 @@
+<div class="row vh-100 d-flex align-items-center justify-content-center">
+    <div class="row col-sm-6 col-lg-4 d-flex justify-content-center login-background">
+        <div class="col-12 vh-50 d-flex align-items-center justify-content-center">
+            <h1 class="mt-1">Inicio de sesión</h1>
+        </div>
+        <div class="col-8 d-flex flex-column justify-content-center">
+            <div>
+                <input type="email" placeholder="Correo" class="form-control mb-2" [(ngModel)] = "email">
+            </div>
+            <div>
+                <input type="password" placeholder="Contraseña" class="form-control mb-2" [(ngModel)] = "password">
+            </div>
+            <div class="d-flex justify-content-center">
+                <button class="btn color-btn" (click) = "logInUser()">Entrar</button>
+            </div>
+            <div class="text-center">
+                <p>¿No tienes cuenta? <a [routerLink] = "['/register']">Registrar</a></p>
+            </div>
+        </div>
+    </div>
+</div>

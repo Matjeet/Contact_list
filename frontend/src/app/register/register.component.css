@@ -1,0 +1,25 @@
+.register-background{
+    background-color: #5e5768;
+    border-radius: 10px;
+}
+
+h1{
+    color: #fff;
+}
+
+.color-btn{
+    background-color: #3a445d;
+    color: #fff;
+}
+
+.color-btn:hover{
+    background-color: #66708a;
+}
+
+.color-header{
+    background-color: #6f4f9c;
+}
+
+.color-btn-back{
+    color: #fff;
+}
